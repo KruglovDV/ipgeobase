@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     ipgeobase (0.1.0)
+      addressable
       happymapper
       nokogiri-happymapper
 
@@ -55,7 +56,6 @@ PLATFORMS
 DEPENDENCIES
   ipgeobase!
   minitest (~> 5.0)
-  nokogiri-happymapper
   rake (~> 13.0)
   rubocop (~> 1.21)
   webmock
