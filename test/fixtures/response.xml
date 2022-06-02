@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-RESPONSE = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <query>
   <status>success</status>
   <country>United States</country>
@@ -16,4 +14,4 @@ RESPONSE = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
   <org>Google Public DNS</org>
   <as>AS15169 Google LLC</as>
   <query>8.8.8.8</query>
-</query>"
+</query>

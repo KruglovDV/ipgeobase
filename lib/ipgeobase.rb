@@ -9,11 +9,10 @@ require "addressable/template"
 require_relative "ipgeobase/version"
 require_relative "ipgeobase/ip_info"
 
-API = "http://ip-api.com/xml"
-
-TEMPLATE = Addressable::Template.new("#{API}{/ip}")
-
 module Ipgeobase
+  API = "http://ip-api.com/xml"
+  TEMPLATE = Addressable::Template.new("#{API}{/ip}")
+
   def self.lookup(ip)
     uri = TEMPLATE.expand({ "ip" => ip }).to_s
     response = Net::HTTP.get(URI(uri))
